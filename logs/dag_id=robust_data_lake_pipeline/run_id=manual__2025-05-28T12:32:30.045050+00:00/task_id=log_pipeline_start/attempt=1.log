@@ -1,0 +1,16 @@
+[2025-05-28T12:59:05.086+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: robust_data_lake_pipeline.log_pipeline_start manual__2025-05-28T12:32:30.045050+00:00 [queued]>
+[2025-05-28T12:59:05.089+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: robust_data_lake_pipeline.log_pipeline_start manual__2025-05-28T12:32:30.045050+00:00 [queued]>
+[2025-05-28T12:59:05.089+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 3
+[2025-05-28T12:59:05.094+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): log_pipeline_start> on 2025-05-28 12:32:30.045050+00:00
+[2025-05-28T12:59:05.096+0000] {standard_task_runner.py:57} INFO - Started process 255 to run task
+[2025-05-28T12:59:05.098+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'robust_data_lake_pipeline', 'log_pipeline_start', 'manual__2025-05-28T12:32:30.045050+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmphn5k79r6']
+[2025-05-28T12:59:05.099+0000] {standard_task_runner.py:85} INFO - Job 13: Subtask log_pipeline_start
+[2025-05-28T12:59:05.105+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-05-28T12:59:05.117+0000] {task_command.py:415} INFO - Running <TaskInstance: robust_data_lake_pipeline.log_pipeline_start manual__2025-05-28T12:32:30.045050+00:00 [running]> on host 99b6cc835ff3
+[2025-05-28T12:59:05.144+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='robust_data_lake_pipeline' AIRFLOW_CTX_TASK_ID='log_pipeline_start' AIRFLOW_CTX_EXECUTION_DATE='2025-05-28T12:32:30.045050+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-28T12:32:30.045050+00:00'
+[2025-05-28T12:59:05.145+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:314 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2025-05-28T12:59:05.145+0000] {pipeline.py:13} INFO - === Starting robust data lake pipeline at 2025-05-28T12:32:30.045050+00:00 ===
+[2025-05-28T12:59:05.145+0000] {python.py:194} INFO - Done. Returned value was: Pipeline started successfully
+[2025-05-28T12:59:05.153+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=robust_data_lake_pipeline, task_id=log_pipeline_start, execution_date=20250528T123230, start_date=20250528T125905, end_date=20250528T125905
+[2025-05-28T12:59:05.195+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-05-28T12:59:05.207+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check
